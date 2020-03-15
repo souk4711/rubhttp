@@ -12,6 +12,7 @@ module DummyServerHelper
   def dummy_server_start!
     Dir.chdir(File.join(__dir__, 'dummy')) do
       dummy_server_process.start
+      sleep 1
     end
   end
 
